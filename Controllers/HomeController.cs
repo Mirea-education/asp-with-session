@@ -18,8 +18,6 @@ namespace WebApplication1.Controllers
         public IActionResult Index()
         {
             HttpContext.Session.SetString("SessionKey", "Данные тут222222222222222");
-            _home.SessionData = HttpContext.Session.GetString("SessionKey");
-            ViewBag.SessionData = _home.SessionData;
 
             return View();
         }
